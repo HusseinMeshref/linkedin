@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/all.css">
+    <link rel="stylesheet" href="./Styles/Registeration.css">
+    <script src="./bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./JS/jquery-3.1.1.js"></script>
+    <link rel="icon" href="./images/icon.png">
+    <title>Sign UP | Linkedin</title>
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center">
+        <header class="d-flex w-100">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo" class="w-100">
+            </div>
+        </header>
+        <h2 class="fw-light text-center ">Make the most of your professional life</h2>
+        <form class="bg-white rounded my-auto needs-validation" novalidate>
+            <!-- start -->
+            <div class="mb-3">
+                <label for="exampleInputText1" class="form-label">Your name</label>
+                <input type="text" minlength="4" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" required>
+                <!-- check email -->
+                <div class="invalid-feedback">
+                  Please enter your name.
+                </div>
+              </div>
+              <!-- end -->
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" minlength="8" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <!-- check email -->
+              <div class="invalid-feedback">
+                Please enter a valid email adress.
+              </div>
+              <div class="invalid-feedback hidden-element emailv nvsble">
+                this Email already exists, try another one;
+              </div>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password (8+ characters)
+                </label>
+                <input type="password" minlength="8" class="form-control" id="exampleInputPassword1" required>
+                <!-- check password-->
+                <div class="invalid-feedback">
+                    Please enter a valid password [Aa-Za], numbers and symbols.
+                  </div>
+            </div>
+            <div class="desclaimer">
+                By clicking Agree & Join, you agree to the LinkedIn <a href="a">User Agreement</a>, <a href="a">Privacy Policy</a>, and <a href="a">Cookie Policy</a>.
+            </div>
+            <button type="submit" class="btn btn-primary rounded-pill w-100">Agree and join</button>
+            <hr>
+            <a class="btn btn-white rounded-pill w-100 border" href="https://accounts.google.com/">
+                <span>continue with Google &nbsp;</span>
+                <img src="./images/google.avif" alt="sign in with google" style="width:16px">
+            </a>
+            <h6 class="text-center py-4">Already on LinkedIn? <a href="./login.html">Sign in</a></h6>
+          </form>
+          <p  class="p-3" style="font-size: 14px;">Looking to create a page for a business? <a href="#">Get help</a></p>
+    </div>
+    <div class="bg-white">
+        <div class="container ">
+            <footer class="d-flex justify-content-between w-100  align-items-center"style="height: 35px;">
+                <img src="./images/logo.png" style="width:60px; filter:grayscale(1)">
+                <a href="#">© 2023</a>
+                <a href="#">About</a>
+                <a href="#">Accessability</a>
+                <a href="#">User Agreement</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Copyright Policy</a>
+                <a href="#">Brand Policy</a>
+                <a href="#">Guest Controls</a>
+                <a href="#">Community Guidelines</a>
+              </footer>
+        </div>
+    </div>
+    <script src="./JS/Registeration.js"></script>
+</body>
+</html>

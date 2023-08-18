@@ -1,0 +1,40 @@
+body{
+    background-color: #F3F2F0; font-family: Helvetica, sans-serif;
+}
+header{
+    padding: 0 ;
+}
+.logo{
+    width:135px;
+}
+header ul .nav-link i{
+    font-size: 22px;
+}
+
+header ul .active{
+    border-bottom:3px solid #212630;
+}
+.profileBg img{
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a{
+    text-decoration: none;
+    color:unset;
+}
+.mainPg i{
+    font-size: 25px;
+}
+ul{
+    list-style: none;
+    padding:0;
+}
+.pfooter li{
+    padding:10px;
+    transition: .2s;
+}
+.pfooter li:hover{
+    color:#126bc4;
+
+}

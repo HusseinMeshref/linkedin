@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/all.css">
+    <link rel="stylesheet" href="./Styles/home.css">
+    <script src="./bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./JS/jquery-3.1.1.js"></script>
+    <link rel="icon" href="./images/icon.png">
+    <title>Home | Linkedin</title>
+</head>
+<body>
+   <header class="bg-white border-bottom ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-white p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/icon.png" alt="linked in" style="width:38px">
+          </a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" hidden>Search</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end ">
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house-chimney"></i></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#"><i class="fa-solid fa-user-group"></i></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#"><i class="fa-solid fa-message"></i></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+              </li>
+              <li class="nav-item px-2 py-1">
+                <a class="nav-link" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                       Do you want to sign out?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">sign out</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+     </div>
+   </header>
+   <div class="container">
+      <div class="row justify-content-center align-items-start g-2 justify-content-between">
+        <div class="col-lg-3  col-md-4 col-sm-12 p-2">
+          <div class="right bg-white rounded overflow-hidden">
+            <div class="profileBg position-relative bg-secondary" style="height:100px;background: linear-gradient(90deg, rgba(64,120,115,1) 2%, rgba(169,189,194,1) 100%);">
+              <img src="./images/personal.png" class="position-absolute rounded-circle border-3 border border-white circle w-25" alt="profile pic">
+            </div>
+            <div class="userInfo d-flex my-5 py-5 flex-column align-items-center">
+              <div class="username fs-3">username</div>
+              <div class="prof">profession</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12 p-2 py-1 mainPg ">
+          <div class="right bg-white rounded d-flex p-2 flex-column border">
+            <div class="w-100 d-flex justify-content-around">
+              <img src="./images/personal.png" class=" rounded-circle  border border-white circle" style="width:10%" alt="profile pic">
+              <div class="btn btn-outline-secondary w-75 text-start">Start a post</div>
+            </div>
+            <div class="d-flex justify-content-around my-4"> 
+              <a href="#">
+                <i class="fa-solid fa-image"></i> Photo
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-video"></i> Video
+              </a>
+              <a href="#">
+                <i class="fa-regular fa-calendar-days"></i> Event
+              </a>
+              <a href="#">
+                <i class="fa-regular fa-newspaper"></i> Write article
+              </a>
+            </div>
+          </div>
+          <hr class="my-3"> 
+          <!-- posts -->
+          <div class="post bg-white rounded d-flex p-2 flex-column border"></div>
+          
+        </div>
+        <div class="col-lg-3 d-none d-lg-block p-2">
+          <div class=" sugg right bg-white rounded overflow-hidden p-3">
+            <h5>Add to your feed</h5>
+            
+          </div>
+          <div class="ads border rounded overflow-hidden my-3">
+            <img src="./images/ads.jpg" class="w-100 ">
+          </div>
+          <footer class="d-flex justify-content-between w-100  align-items-center flex-wrap">
+            <img src="./images/logo.png" style="width:60px; filter:grayscale(1)">
+            <a href="#">© 2023</a>
+            <a href="#">About</a>
+            <a href="#">Accessability</a>
+            <a href="#">User Agreement</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Copyright Policy</a>
+            <a href="#">Brand Policy</a>
+            <a href="#">Guest Controls</a>
+            <a href="#">Community Guidelines</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  <script src="./JS/home.js"></script>
+</body>
+</html>

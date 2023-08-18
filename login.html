@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/all.css">
+    <link rel="stylesheet" href="./Styles/login.css">
+    <script src="./bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./JS/jquery-3.1.1.js"></script>
+    <link rel="icon" href="./images/icon.png">
+    <title>Linkedin | Login</title>
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center">
+        <header class="d-flex w-100">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo" class="w-100">
+            </div>
+        </header>
+        <form class="bg-white rounded my-auto needs-validation shadow" novalidate>
+            <h1 class="fw-light ">Sign in</h1>
+            <h6 class="" style="font-size: 14px;">Stay updated on your professional world</h6>
+            <div class="alert alert-danger d-none" role="alert">
+                <strong>Wrong Email or password</strong> Try again
+            </div>
+            
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-6">Your Email</label>
+              <input type="email" minlength="8" class="form-control" placeholder="Enter Your email"
+               id="exampleInputEmail1" aria-describedby="emailHelp" required autofocus>
+              <!-- check email -->
+              <div class="invalid-feedback">
+                Please enter a valid email adress.
+              </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label fs-6">Password 
+                </label>
+                <input type="password" minlength="8" class="form-control" placeholder="Enter your password"
+                 id="exampleInputPassword1" required>
+                <!-- check password-->
+                <div class="invalid-feedback">
+                    Please enter a valid password [Aa-Za], numbers and symbols.
+                  </div>
+            </div>
+            <div class="desclaimer fs-6 text-primary"><a  href="#">Forgot password?</a></div>
+            <button type="submit" class="btn btn-primary rounded-pill w-100 fw-bolder">Sign in</button>
+            <hr>
+            <a class="btn btn-white rounded-pill w-100 border my-2 border-dark btnhov" href="https://accounts.google.com/">
+                <span>continue with Google &nbsp;</span>
+                <img src="./images/google.avif" alt="sign in with google" style="width:16px">
+            </a>
+            <a class="btn btn-white rounded-pill w-100 border d-flex align-items-center justify-content-center my-2 border-dark btnhov" href="https://accounts.google.com/">
+                <span class="fs-5 fw-bolder text-secondary">Sign in with Apple &nbsp;</span>
+                <img src="./images/apple.png" alt="sign in with Apple" style="width:20px">
+            </a>
+            
+          </form>
+          <h6 class="text-center py-4">New to LinkedIn? <a href="./Registeration.html"> Join now</a></h6>
+    </div>
+    <div class="bg-white">
+        <div class="container ">
+            <footer class="d-flex justify-content-between w-100  align-items-center"style="height: 35px;">
+                <img src="./images/logo.png" style="width:60px; filter:grayscale(1)">
+                <a href="#">© 2023</a>
+                <a href="#">About</a>
+                <a href="#">Accessability</a>
+                <a href="#">User Agreement</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Copyright Policy</a>
+                <a href="#">Brand Policy</a>
+                <a href="#">Guest Controls</a>
+                <a href="#">Community Guidelines</a>
+              </footer>
+        </div>
+    </div>
+    <script src="./JS/login.js"></script>
+</body>
+</html>
